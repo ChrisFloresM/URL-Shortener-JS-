@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 4.8rem 0;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.input-container {
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+}
+
+.input-text {
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#input-url {
+    padding: 0.5rem 0.25rem;
+    min-width: 30rem;
+}
+
+.input-text:focus {
+    outline: none;
+    box-shadow: 0 0 0.5rem 0.1rem #F0E68C;
+}
+
+.input-text--edit {
+    padding: 0 0.5rem;
+    max-width: 5rem;
+}
+
+.button {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: #EEE;
+    font-weight: 700;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+#button-create {
+    background-color: #469548;
+
+}
+
+#button-delete {
+    background-color: #7e1d1d;
+}
+
+#list-url {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #A3CB38;
+    transition: all 0.2s ease;
+}
+
+a:hover, a:active {
+    color: #FF5733;
+}
+
+.button--edit-save {
+    background-color: #8E44AD;
+}
+.error-message {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.click-count {
+    font-size: 1.2rem;
+    color: #F0E68C;
+}
